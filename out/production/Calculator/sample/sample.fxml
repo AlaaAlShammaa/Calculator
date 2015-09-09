@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<AnchorPane prefHeight="437.0" prefWidth="358.0" style="-fx-background-color: BABABA;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <GridPane layoutX="-1.0" layoutY="17.0" prefHeight="451.0" prefWidth="388.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="90.0" minWidth="10.0" prefWidth="90.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="104.0" minWidth="10.0" prefWidth="92.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="109.0" minWidth="10.0" prefWidth="101.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="107.0" minWidth="10.0" prefWidth="107.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <TextField fx:id="screen" prefHeight="63.0" prefWidth="388.0" style="-fx-background-color: #333333; -fx-text-fill: #FFFFFF; -fx-font-size: 16;" GridPane.columnSpan="2147483647" />
+                <Button id="Button" mnemonicParsing="false" onAction="#handleOperation" onKeyPressed="#handlePressedOperation" prefHeight="42.0" prefWidth="51.0" style="-fx-background-color: #FF6600;" stylesheets="@StyleSheet.css" text="*" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                    <padding>
+                        <Insets bottom="15.0" left="20.0" right="20.0" top="15.0" />
+                    </padding>
+                </Button>
+                <Button id="Button" mnemonicParsing="false" onAction="#handleOperation" onKeyPressed="#handlePressedOperation" prefHeight="42.0" prefWidth="50.0" style="-fx-background-color: #FF6600;" stylesheets="@StyleSheet.css" text="-" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                    <padding>
+                        <Insets bottom="15.0" left="20.0" right="20.0" top="15.0" />
+                    </padding>
+                </Button>
+                <Button id="Button" mnemonicParsing="false" onAction="#handleOperation" onKeyPressed="#handlePressedOperation" prefHeight="42.0" prefWidth="54.0" style="-fx-background-color: #FF6600;" stylesheets="@StyleSheet.css" text="+" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+                    <padding>
+                        <Insets bottom="15.0" left="20.0" right="20.0" top="15.0" />
+                    </padding>
+                </Button>
+                <Button id="Button" mnemonicParsing="false" onAction="#handleEqualOperation" prefHeight="42.0" prefWidth="100.0" style="-fx-background-color: #FF6600;" stylesheets="@StyleSheet.css" text="=" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER">
+                    <padding>
+                        <Insets bottom="15.0" left="20.0" right="20.0" top="15.0" />
+                    </padding>
+                </Button>
+                <Button id="Button" mnemonicParsing="false" onAction="#handleDeleteAction" style="-fx-background-color: #CC0000;" stylesheets="@StyleSheet.css" text="C" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                    <padding>
+                        <Insets bottom="15.0" left="20.0" right="20.0" top="15.0" />
+                    </padding>
+                </Button>
+                <Button id="Button" mnemonicParsing="false" onAction="#handleNumberSignAction" style="-fx-background-color: #FF6600;" stylesheets="@StyleSheet.css" text="+/-" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                    <padding>
+                        <Insets bottom="15.0" left="20.0" right="20.0" top="15.0" />
+                    </padding>
+                </Button>
+                <Button id="Button" mnemonicParsing="false" onAction="#handleOperation" onKeyPressed="#handlePressedOperation" prefHeight="42.0" prefWidth="52.0" style="-fx-background-color: #FF6600;" stylesheets="@StyleSheet.css" text="\%" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                    <padding>
+                        <Insets bottom="15.0" left="20.0" right="20.0" top="15.0" />
+                    </padding>
+                </Button>
+                <Button id="Button" mnemonicParsing="false" onAction="#handleDigitAction" onKeyPressed="#handleKeyPressedAction" style="-fx-background-color: #B3B3B3;" stylesheets="@StyleSheet.css" text="7" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                    <padding>
+                        <Insets bottom="15.0" left="20.0" right="20.0" top="15.0" />
+                    </padding>
+                </Button>
+                <Button id="Button" mnemonicParsing="false" onAction="#handleDigitAction" onKeyPressed="#handleKeyPressedAction" style="-fx-background-color: #B3B3B3;" stylesheets="@StyleSheet.css" text="8" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                    <padding>
+                        <Insets bottom="15.0" left="20.0" right="20.0" top="15.0" />
+                    </padding>
+                </Button>
+                <Button id="Button" mnemonicParsing="false" onAction="#handleDigitAction" onKeyPressed="#handleKeyPressedAction" style="-fx-background-color: #B3B3B3;" stylesheets="@StyleSheet.css" text="9" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                    <padding>
+                        <Insets bottom="15.0" left="20.0" right="20.0" top="15.0" />
+                    </padding>
+                </Button>
+                <Button id="Button" mnemonicParsing="false" onAction="#handleDigitAction" onKeyPressed="#handleKeyPressedAction" style="-fx-background-color: #B3B3B3;" stylesheets="@StyleSheet.css" text="4" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                    <padding>
+                        <Insets bottom="15.0" left="20.0" right="20.0" top="15.0" />
+                    </padding>
+                </Button>
+                <Button id="Button" mnemonicParsing="false" onAction="#handleDigitAction" onKeyPressed="#handleKeyPressedAction" style="-fx-background-color: #B3B3B3;" stylesheets="@StyleSheet.css" text="5" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                    <padding>
+                        <Insets bottom="15.0" left="20.0" right="20.0" top="15.0" />
+                    </padding>
+                </Button>
+                <Button id="Button" mnemonicParsing="false" onAction="#handleDigitAction" onKeyPressed="#handleKeyPressedAction" style="-fx-background-color: #B3B3B3;" stylesheets="@StyleSheet.css" text="6" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                    <padding>
+                        <Insets bottom="15.0" left="20.0" right="20.0" top="15.0" />
+                    </padding>
+                </Button>
+                <Button id="Button" mnemonicParsing="false" onAction="#handleDigitAction" onKeyPressed="#handleKeyPressedAction" style="-fx-background-color: #B3B3B3;" stylesheets="@StyleSheet.css" text="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+                    <padding>
+                        <Insets bottom="15.0" left="20.0" right="20.0" top="15.0" />
+                    </padding>
+                </Button>
+                <Button id="Button" mnemonicParsing="false" onAction="#handleDigitAction" onKeyPressed="#handleKeyPressedAction" style="-fx-background-color: #B3B3B3;" stylesheets="@StyleSheet.css" text="2" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+                    <padding>
+                        <Insets bottom="15.0" left="20.0" right="20.0" top="15.0" />
+                    </padding>
+                </Button>
+                <Button id="Button" mnemonicParsing="false" onAction="#handleDigitAction" onKeyPressed="#handleKeyPressedAction" prefHeight="42.0" prefWidth="129.0" style="-fx-background-color: #B3B3B3;" stylesheets="@StyleSheet.css" text="0" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER">
+                    <padding>
+                        <Insets bottom="15.0" left="20.0" right="20.0" top="15.0" />
+                    </padding>
+                </Button>
+                <Button id="Button" mnemonicParsing="false" onAction="#handleDotAction" style="-fx-background-color: #B3B3B3;" stylesheets="@StyleSheet.css" text="." GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER">
+                    <padding>
+                        <Insets bottom="15.0" left="20.0" right="20.0" top="15.0" />
+                    </padding>
+                </Button>
+                <Button id="Button" mnemonicParsing="false" onAction="#handleDigitAction" onKeyPressed="#handleKeyPressedAction" style="-fx-background-color: #B3B3B3;" stylesheets="@StyleSheet.css" text="3" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+                    <padding>
+                        <Insets bottom="15.0" left="20.0" right="20.0" top="15.0" />
+                    </padding>
+                </Button>
+                <Button id="Button" layoutX="132.0" layoutY="100.0" mnemonicParsing="false" onAction="#handleClearAction" style="-fx-background-color: #B20000;" stylesheets="@StyleSheet.css" text="AC" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                    <padding>
+                        <Insets bottom="15.0" left="20.0" right="20.0" top="15.0" />
+                    </padding>
+                </Button>
+            </children>
+        </GridPane>
+        <MenuBar layoutX="1.0" layoutY="2.0" prefHeight="4.0" prefWidth="388.0" style="-fx-background-color: BABABA;">
+            <menus>
+                <Menu mnemonicParsing="false" text="Type">
+                    <items>
+                        <RadioMenuItem mnemonicParsing="false" selected="true" text="Standard" />
+                        <RadioMenuItem mnemonicParsing="false" text="Scientific" />
+                        <RadioMenuItem mnemonicParsing="false" text="Graph" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#handleAboutClick" text="About" />
+                        <MenuItem mnemonicParsing="false" onAction="#handleReportABugClick" text="Report a bug" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+    </children>
+</AnchorPane>
